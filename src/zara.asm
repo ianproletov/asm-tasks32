@@ -7,9 +7,9 @@ _start:
   mov eax, 4
   int 80h
 
-  mov [name], word 'Nuha'
+  mov [name], dword 'Nuha'
 
-  mov edx, 8 
+  mov edx, 8
   mov ecx, name
   mov ebx, 1
   mov eax, 4
