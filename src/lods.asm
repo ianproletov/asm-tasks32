@@ -11,8 +11,6 @@ loop_here:
   add al, 02
   stosb
   loop loop_here
-  cld
-  rep movsb
 
   mov edx, 20
   mov ecx, s2
