@@ -8,7 +8,7 @@ _start:
   cld
   rep movsb
 
-  mov edx, 20
+  mov edx, 13
   mov ecx, s2
   mov ebx, 1
   mov eax, 4
@@ -18,8 +18,8 @@ _start:
   int 0x80
 
 section .data
-s1 db 'Hello, world', 0
+s1 db 'Hello, world!', 0
 len equ $ - s1
 
 section .bss
-s2 resb 20
+s2 resb 13
